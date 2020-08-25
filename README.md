@@ -17,7 +17,7 @@ Códigos para portifólio com os conhecimentos adquiridos na plataforma de ensin
 - Java 14 
 - Maven
 
-Endpoints criados na API Criar sala de reuniao POST - /eventos
+Endpoints criados na API 
 
 Listar todos os eventos GET - /eventos
 
