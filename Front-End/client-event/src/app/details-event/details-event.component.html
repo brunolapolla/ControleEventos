@@ -1,0 +1,31 @@
+
+<h2>Event Details</h2> 
+<hr/>
+<div *ngIf="event">
+  <div>
+    <label><b>Nome do evento</b></label> {{event.nomeEvento}}
+  </div>
+  <div>
+    <div>
+     <label><b>Local do evento</b></label> {{event.localEvento}}
+  </div>
+<div>
+    <label><b>Data do evento</b></label> {{event.dataEvento}}
+  </div>
+  <div>
+    <label><b>Horário de início</b></label> {{event.horarioInicio}}
+  </div>
+    <div>
+    <label><b>Horário de término</b></label> {{event.horarioFim}}
+  </div>
+  <div>
+    <label><b>Quantidade de participantes</b></label> {{event.quantidadeParticipantes}}
+  </div>
+  <div>
+    <label><b>Organizador do evento</b></label> {{event.nomeOrganizador}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Voltar</button><br>

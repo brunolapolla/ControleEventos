@@ -1,0 +1,36 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Listar eventos</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nome do evento</th>
+            <th>Local do evento</th>
+            <th>Data do evento</th>
+            <th>Horário de início</th>
+            <th>Horário de término</th>
+            <th>Quantidade de participantes</th>
+            <th>Nome do organizador</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let event of event | async">
+            <td>{{event.nomeEvento}}</td>
+            <td>{{event.localEvento}}</td>
+            <td>{{event.dataEvento}}</td>
+            <td>{{event.horarioInicio}}</td>
+            <td>{{event.horarioFim}}</td>
+            <td>{{event.quantidadeParticipantes}}</td>
+            <td>{{event.nomeOrganizador}}</td>
+            <td><button (click)="deleteEvent(event.id)" class="btn btn-danger">Excluir</button>
+              <button (click)="updateEvent(event.id)" class="btn btn-warning" >Atualizar</button>
+                <button (click)="eventDetails(event.id)" class="btn btn-info" >Detalhes</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
