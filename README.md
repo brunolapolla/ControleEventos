@@ -9,13 +9,13 @@ Códigos para portifólio com os conhecimentos adquiridos na plataforma de ensin
 
 **Orientações para o Backend:**
 
-Stacks utilizadas: 
-Spring Web 
-Spring Data 
-JPA 
-H2 Database 
-Java 14 
-Maven
+- Stacks utilizadas: 
+- Spring Web 
+- Spring Data 
+- JPA 
+- H2 Database 
+- Java 14 
+- Maven
 
 Endpoints criados na API Criar sala de reuniao POST - /eventos
 
